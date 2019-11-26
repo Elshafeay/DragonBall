@@ -1,0 +1,1 @@
+> *this is a JavaScript game but still under developing...*
