@@ -1,69 +1,19 @@
-
-#playerImage
-{
-    width: 60px;
-    height: 70px;
-}
-
-#playerBox
-{
-    width: 60px;
-    height: 70px;
-    margin-left: 1200px;
-    margin-top: 10px;
-
-}
-
-#scoreBox
-{
-    width: 70px;
-    height: 40px;
-    background-color: green;
-    text-align: center;
-    margin-left: 1100px;
-    margin-top: -70px;
-    border-radius: 40px;
-}
-
-
-#score
-{
-    font-size: 20px;
-    padding-top: 5px;
-}
-
-#playerName
-{
-    margin-left: 1210px;
-    margin-top: 20px
-}
-
-#myCanvas
-{
-    border:1px solid #000000;
-}
-*{
+html{
+    height:100%;
     margin: 0;
-    padding: 0;
 }
-#gameHeader{
-    width: 100%;
+
+body{
+    height: inherit;
+    margin: inherit;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header{
     height: 100px;
-    display: block;
-    background-color: blue;
-    background-image: url(39587114-library-wallpapers.jpg);
 }
-#container{
-    min-height: 100%;
-}
-main{
-    overflow: auto;
-    padding-bottom: 100px;
-}
-#gameFooter{
-    background-color: blue;
-    position: relative;
+footer{
     height: 50px;
-    clear: both;
-    background-image: url(39587114-library-wallpapers.jpg);
 }
