@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Dragon Ball</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <body>
-        <div id="container">
-            <header>
-                <img src="images/yellow_goku.gif" alt="First Player image" id="firstPlayerImage"/>    
-                <img src="images/blue_goku.gif" alt="second Player image" id="secondPlayerImage"/> 
-                <p id="firstPlayerName"  class="playerName"> Player 1</p>
-                <p id="secondPlayerName" class="playerName"> Player 2</p>
-                <div id="LscoreBox" class="scoreLabel"><p id="Lscore">0</p></div>
-                <div id="RscoreBox" class="Rscore scoreLabel"><p id="Rscore">0</p></div>
-            </header>
-            <footer></footer>
-        </div>
-        <script src="js/components.js"> </script>
-        <script src="js/gameScreen.js"></script>
-        <script src="js/fireBall.js"></script>
-        <script src="js/movements.js"></script>
-        <script src="js/scoring.js"></script>
-    </body>
+    <link rel="stylesheet" href="css/homePage.css">
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="audio/intro.ogg" type="audio/ogg">
+        <source src="audio/intro.mp3" type="audio/mp3">
+    </audio>
+    <div class='menu' id='menu'>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="start" onclick="location.href = 'gameScreen.html';">Start Game!</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="help" onclick="location.href = 'help.html';">How to Play?</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="credits" onclick="location.href = 'credits.html';">Credits</button>
+    </div>
+
+</body>
 
 </html>
