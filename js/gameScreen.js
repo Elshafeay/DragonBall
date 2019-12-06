@@ -1,40 +1,3 @@
-var container = document.getElementById("container")
-var Xincreament = 15
-var Yincreament = 10
-
-function component(imgSrc, x, y, Ybound, height, width) {
-    this.width = width;
-    this.height = height;
-    this.x = x;
-    this.y = y;
-    this.image=new Image(this.width , this.height)
-    this.image.src=imgSrc
-    this.update = function(){
-        ctx = gameArea.context;   
-        if(this.y<0){this.y=0}
-        if(this.y>Ybound){this.y=Ybound}
-        ctx.drawImage(this.image, this.x, this.y , this.width , this.height);
-    }
-    this.crashWith = function(otherobj) {
-        var myleft = this.x;
-        var myright = this.x + (this.width);
-        var mytop = this.y;
-        var mybottom = this.y + (this.height);
-        var otherleft = otherobj.x;
-        var otherright = otherobj.x + (otherobj.width);
-        var othertop = otherobj.y;
-        var otherbottom = otherobj.y + (otherobj.height);
-        var crash = true;
-        if ((mytop < othertop) ||
-        (mybottom > otherbottom) ||
-        (myright < otherleft) ||
-        (myleft > otherright)) {
-          crash = false;
-        }
-        return crash;
-    }
-}
-
 var gameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -59,45 +22,19 @@ function startGame() {
     fireBall = new component("images/fire_ball.png", 200, 150, 450, 110, 115)
 }
 
-//we put it into setInterval to be repeated the whole time
-//this function would clear the screen and set the new coordinates
-//of each one of the characters and draw it 
-//over and over again to be like a punch of frames
 function updateGameArea() {
     gameArea.clear()
-    if(fireBall.crashWith(gameCharLeft)||fireBall.crashWith(gameCharRight)){
-        Xincreament *= -1
-    }
-    if(fireBall.y <= 0){
-        Yincreament *= -1
-        fireBall.y = 0
-    }
-    else if(fireBall.y >= 450){
-        Yincreament *= -1
-        fireBall.y = 450
-    }
-    fireBall.x += Xincreament
-    fireBall.y += Yincreament
+    fireBallHandling()
     fireBall.update()
     gameCharLeft.update()
     gameCharRight.update()
 }
 
-function leftMoveUp() {
-    gameCharLeft.y -= 20;
-}
-  
-function leftMoveDown() {
-    gameCharLeft.y += 20;
-}
-function rightMoveUp() {
-    gameCharRight.y -= 20;
-}
-  
-function rightMoveDown() {
-    gameCharRight.y += 20;
-}
-
+var container = document.getElementById("container")
+var Xincreament = 15
+var Yincreament = 10
+var Rgoal=0
+var Lgoal=0
 startGame()
 var canvas = document.getElementsByTagName('canvas')[0];
 
@@ -115,22 +52,6 @@ document.addEventListener( 'keydown' , (e) => {
             leftMoveUp()
         }
         if (map[115] || map[83]) {
-            leftMoveDown()
-        }
-        if (map[38] && (map[119] || map[87])) {
-            rightMoveUp()
-            leftMoveUp()
-        }
-        if (map[40] && (map[119] || map[87])) {
-            rightMoveDown()
-            leftMoveUp()
-        }
-        if (map[38] && (map[115] || map[83])) {
-            rightMoveUp()
-            leftMoveDown()
-        }
-        if (map[40] && (map[115] || map[83])) {
-            rightMoveDown()
             leftMoveDown()
         }
     }
