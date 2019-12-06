@@ -2,7 +2,7 @@ var gameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
         this.canvas.width = window.innerWidth;
-        this.canvas.height = window.innerHeight;
+        this.canvas.height = window.innerHeight * 0.75 ;
         this.context = this.canvas.getContext("2d");
         container.insertBefore(this.canvas, container.childNodes[2]);
         this.interval = setInterval(updateGameArea, 20);
