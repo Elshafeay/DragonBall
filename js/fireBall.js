@@ -13,11 +13,13 @@ function fireBallHandling(){
     if(fireBall.x < -115){
         Rgoal=1
         gameArea.stop()
+        Xincreament=Math.abs(Xincreament)
         checkScoring()
     }
     else if(fireBall.x > window.innerWidth + 115){
         Lgoal=1
         gameArea.stop()
+        Xincreament=Math.abs(Xincreament)
         checkScoring()
     }
     fireBall.x += Xincreament

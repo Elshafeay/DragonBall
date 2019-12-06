@@ -2,9 +2,15 @@
     margin: 200px;
 }
 body{
-    background-image: url(9330_1080p-stars-wallpaper.jpg);
+    background-image: url(../images/homePageBackground.jpg);
 }
 #start,#help,#credits{
     width: 200px;
-    margin-left: 400px;
+    margin: auto;
+    margin-left: 980px;
+    margin-top: 20px;
+}
+
+.btn{
+    border-radius: 100px;
 }
