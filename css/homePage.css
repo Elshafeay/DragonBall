@@ -1,0 +1,10 @@
+#menu{
+    margin: 200px;
+}
+body{
+    background-image: url(9330_1080p-stars-wallpaper.jpg);
+}
+#start,#help,#credits{
+    width: 200px;
+    margin-left: 400px;
+}
