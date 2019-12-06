@@ -60,7 +60,7 @@ function startGame() {
     gameArea.start();
     gameCharLeft = new component("images/goku_blue_left.png", 40, 150, 300, 250, 150)
     gameCharRight = new component("images/goku_yellow_right.png", 1350, 150, 300, 250, 150)
-    fireBall = new component("images/fire_ball.png", 700, 150, 450, 110, 115)
+    fireBall = new component("images/fire_ball.png", 200, 150, 450, 110, 115)
 }
 
 //we put it into setInterval to be repeated the whole time
@@ -105,18 +105,42 @@ function rightMoveDown() {
 startGame()
 var canvas = document.getElementsByTagName('canvas')[0];
 
-document.addEventListener( 'keyup' , (event) => {
-    const keyName = event.key;
-    if (keyName == 'w') {
-        leftMoveUp()
-    }
-    else if (keyName == 's') {
-        leftMoveDown()
-    }
-    if (keyName == 'ArrowUp') {
-        rightMoveUp()
-    }
-    else if (keyName == 'ArrowDown') {
-        rightMoveDown()
+var map = {38: false, 40: false, 119: false, 115: false, 87: false, 83: false};
+document.addEventListener( 'keydown' , (e) => {
+    if (e.keyCode in map) {
+        map[e.keyCode] = true;
+        if (map[38]) {
+            rightMoveUp()
+        }
+        if (map[40]) {
+            rightMoveDown()
+        }
+        if (map[119] || map[87]) {
+            leftMoveUp()
+        }
+        if (map[115] || map[83]) {
+            leftMoveDown()
+        }
+        if (map[38] && (map[119] || map[87])) {
+            rightMoveUp()
+            leftMoveUp()
+        }
+        if (map[40] && (map[119] || map[87])) {
+            rightMoveDown()
+            leftMoveUp()
+        }
+        if (map[38] && (map[115] || map[83])) {
+            rightMoveUp()
+            leftMoveDown()
+        }
+        if (map[40] && (map[115] || map[83])) {
+            rightMoveDown()
+            leftMoveDown()
+        }
     }
 })
+document.addEventListener("keyup", (e) => {
+    if (e.keyCode in map) {
+        map[e.keyCode] = false;
+    }
+});
