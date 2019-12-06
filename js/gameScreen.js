@@ -1,5 +1,5 @@
 var container = document.getElementById("container")
-var Xincreament = 20
+var Xincreament = 15
 var Yincreament = 10
 
 function component(imgSrc, x, y, Ybound, height, width) {
@@ -7,17 +7,13 @@ function component(imgSrc, x, y, Ybound, height, width) {
     this.height = height;
     this.x = x;
     this.y = y;
-    this.imgSrc=imgSrc
+    this.image=new Image(this.width , this.height)
+    this.image.src=imgSrc
     this.update = function(){
-        var image = document.createElement("img")
         ctx = gameArea.context;   
-        image.src=this.imgSrc
         if(this.y<0){this.y=0}
         if(this.y>Ybound){this.y=Ybound}
-        image.addEventListener('load', e => {
-            ctx.drawImage(image, this.x, this.y);
-            return true
-        });
+        ctx.drawImage(this.image, this.x, this.y , this.width , this.height);
     }
     this.crashWith = function(otherobj) {
         var myleft = this.x;
@@ -46,7 +42,7 @@ var gameArea = {
         this.canvas.height = 560;
         this.context = this.canvas.getContext("2d");
         container.insertBefore(this.canvas, container.childNodes[2]);
-        this.interval = setInterval(updateGameArea, 40);
+        this.interval = setInterval(updateGameArea, 20);
     },
     clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
