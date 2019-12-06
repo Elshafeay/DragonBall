@@ -1,8 +1,8 @@
 var gameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 1530;
-        this.canvas.height = 560;
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
         this.context = this.canvas.getContext("2d");
         container.insertBefore(this.canvas, container.childNodes[2]);
         this.interval = setInterval(updateGameArea, 20);
@@ -18,7 +18,7 @@ var gameArea = {
 function startGame() {
     gameArea.start();
     gameCharLeft = new component("images/goku_blue_left.png", 40, 150, 300, 250, 150)
-    gameCharRight = new component("images/goku_yellow_right.png", 1350, 150, 300, 250, 150)
+    gameCharRight = new component("images/goku_yellow_right.png", window.innerWidth - (window.innerWidth/7), 150, 300, 250, 150)
     fireBall = new component("images/fire_ball.png", 200, 150, 450, 110, 115)
 }
 
