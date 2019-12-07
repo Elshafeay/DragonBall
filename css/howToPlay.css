@@ -1,0 +1,22 @@
+body{
+    background-image: url(images/homePageBackground.jpg);
+}
+p{
+    font-size: x-large;
+    display: block;
+    
+}
+.card{
+    margin: 200px;
+    margin-left: 200px;
+    
+}
+#back{
+    width: 90px;
+    border-radius: 100px;
+}
+u{
+    font-weight: bold;
+    font-size: x-large;
+    text-underline-position: below;
+}
