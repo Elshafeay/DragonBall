@@ -116,12 +116,12 @@ function afterChooseBluePlayer1()
     {    
         if(afterChooseYellowPlayer1Flag == 1 || afterChooseBluePlayer1Flag == 1)
         {
-            createImgTagPlayer1.setAttribute('src', '../images/goku_blue_left.png');
+            createImgTagPlayer1.setAttribute('src', 'images/goku_blue_left.png');
         }
 
         else
         {
-            createImgTagPlayer1.setAttribute('src', '../images/goku_blue_left.png');
+            createImgTagPlayer1.setAttribute('src', 'images/goku_blue_left.png');
             player1ShowDiv.appendChild(createImgTagPlayer1);
             afterChooseBluePlayer1Flag = 1; 
         } 
@@ -134,11 +134,11 @@ function afterChooseYellowPlayer1()
     {
         if(afterChooseBluePlayer1Flag == 1 || afterChooseYellowPlayer1Flag == 1)
         {
-            createImgTagPlayer1.setAttribute('src', '../images/goku_yellow_left.png');
+            createImgTagPlayer1.setAttribute('src', 'images/goku_yellow_left.png');
         }
         else
         {
-            createImgTagPlayer1.setAttribute('src', '../images/goku_yellow_left.png');
+            createImgTagPlayer1.setAttribute('src', 'images/goku_yellow_left.png');
             player1ShowDiv.appendChild(createImgTagPlayer1);
             afterChooseYellowPlayer1Flag = 1;
         }
@@ -151,11 +151,11 @@ function afterChooseBluePlayer2()
     {
         if(afterChooseYellowPlayer2Flag == 1 || afterChooseBluePlayer2Flag == 1)
         {
-            createImgTagPlayer2.setAttribute('src', '../images/goku_blue_right.png');
+            createImgTagPlayer2.setAttribute('src', 'images/goku_blue_right.png');
         }
         else
         {
-            createImgTagPlayer2.setAttribute('src', '../images/goku_blue_right.png');
+            createImgTagPlayer2.setAttribute('src', 'images/goku_blue_right.png');
             player2ShowDiv.appendChild(createImgTagPlayer2);
             afterChooseBluePlayer2Flag = 1;
         }
@@ -170,11 +170,11 @@ function afterChooseYellowPlayer2()
     {
         if(afterChooseBluePlayer2Flag == 1 || afterChooseYellowPlayer2Flag == 1)
         {
-            createImgTagPlayer2.setAttribute('src', '../images/goku_yellow_right.png');
+            createImgTagPlayer2.setAttribute('src', 'images/goku_yellow_right.png');
         }
         else
         {
-            createImgTagPlayer2.setAttribute('src', '../images/goku_yellow_right.png');
+            createImgTagPlayer2.setAttribute('src', 'images/goku_yellow_right.png');
             player2ShowDiv.appendChild(createImgTagPlayer2);
             afterChooseYellowPlayer2Flag = 1;
         }
@@ -203,24 +203,24 @@ function storeSessionVariableOfPlayers()
 {
     if(afterChooseBluePlayer1Flag == 1 && afterChooseYellowPlayer1Flag == 0)
     {
-        sessionStorage.setItem("player1ImgInFooter", "../images/goku9 (1).png");
+        sessionStorage.setItem("player1ImgInFooter", "images/goku9 (1).png");
         sessionStorage.setItem("player1ImgForInBody", "image/edit/goku_blue_left.png");
     }
     else
     {
-        sessionStorage.setItem("player1ImgInFooter", "../images/goku8 (2).png");
+        sessionStorage.setItem("player1ImgInFooter", "images/goku8 (2).png");
         sessionStorage.setItem("player1ImgForInBody", "image/edit/goku_yellow_left.png");
     }
 
     if(afterChooseBluePlayer2Flag == 1 && afterChooseYellowPlayer2Flag == 0)
     {
-        sessionStorage.setItem("player2ImgInFooter", "../images/goku9 (1).png");
-        sessionStorage.setItem("player2ImgForInBody", "../images/goku_blue_right.png");
+        sessionStorage.setItem("player2ImgInFooter", "images/goku9 (1).png");
+        sessionStorage.setItem("player2ImgForInBody", "images/goku_blue_right.png");
     }
     else
     {
-        sessionStorage.setItem("player2ImgInFooter", "../images/goku8 (2).png");
-        sessionStorage.setItem("player2ImgForInBody", "../images/goku_yellow_right.png");
+        sessionStorage.setItem("player2ImgInFooter", "images/goku8 (2).png");
+        sessionStorage.setItem("player2ImgForInBody", "images/goku_yellow_right.png");
 
     }
 }
