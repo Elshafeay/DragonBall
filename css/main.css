@@ -101,31 +101,18 @@ p{
 
 #loader {
     position: absolute;
-    left: 45%;
-    top: 40%;
+    left: 40%;
+    top: 35%;
     z-index: 1;
     width: 300px;
     height: 300px;
-    margin: -75px 0 0 -75px;
-
-    text-shadow: 2px 2px rgb(87, 0, 128);
+    margin: auto;
     font-style: oblique;
     font-family: "Times New Roman", Times, serif;
-    color: red;
-    font-size: 60px;
+    color: white;
+    font-size: 100px;
     margin:0;
     margin-top: 10px;
-
-    
-  }
-  
-  #loadtext
-  {
-      text-shadow: 2px 2px rgb(87, 0, 128);
-      font-style: oblique;
-      font-family: "Times New Roman", Times, serif;
-      color: white;
-      font-size: 30px;
-      margin:0;
-      margin-top: 10px;
+    text-shadow: 1px 1px 20px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-align: center;
   }

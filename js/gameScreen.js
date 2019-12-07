@@ -5,9 +5,9 @@ var gameArea = {
         this.canvas.height = window.innerHeight * 0.75 ;
         this.context = this.canvas.getContext("2d");
         container.insertBefore(this.canvas, container.childNodes[2]);
-        gameCharLeft = new component("images/goku_blue_left.png", 40, 150, 300, 250, 150)
-        gameCharRight = new component("images/goku_yellow_right.png", window.innerWidth - (window.innerWidth/7), 150, 300, 250, 150)
-        fireBall = new component("images/fire_ball.png", 200, 150, 450, 110, 115)
+        gameCharLeft = new component("images/goku_blue_left.png", 40, 150, 300, 150, 250)
+        gameCharRight = new component("images/goku_yellow_right.png", window.innerWidth - (window.innerWidth/7), 150, 300, 150, 250)
+        fireBall = new component("images/fire_ball.png", 180, 140, 450, 120, 135)
         fireBall.draw()
         gameCharLeft.draw()
         gameCharRight.draw()

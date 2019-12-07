@@ -1,4 +1,4 @@
-function component(imgSrc, x, y, Ybound, height, width) {
+function component(imgSrc, x, y, Ybound, width, height) {
     this.width = width;
     this.height = height;
     this.x = x;
