@@ -4,12 +4,12 @@ function checkScoring(){
     if(Rgoal){
         rPlayerScore+=1;
         Rgoal=0;
-        startGame()
+        loadGame()
     }
     if(Lgoal){
         lPlayerScore+=1;
         Lgoal=0;
-        startGame()
+        loadGame()
     }
 
     if(rPlayerScore==3){

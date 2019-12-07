@@ -98,3 +98,34 @@ p{
 #Lscore, #Rscore{
     padding-top: 10px;
 }
+
+#loader {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    margin: -75px 0 0 -75px;
+
+    text-shadow: 2px 2px rgb(87, 0, 128);
+    font-style: oblique;
+    font-family: "Times New Roman", Times, serif;
+    color: red;
+    font-size: 60px;
+    margin:0;
+    margin-top: 10px;
+
+    
+  }
+  
+  #loadtext
+  {
+      text-shadow: 2px 2px rgb(87, 0, 128);
+      font-style: oblique;
+      font-family: "Times New Roman", Times, serif;
+      color: white;
+      font-size: 30px;
+      margin:0;
+      margin-top: 10px;
+  }
