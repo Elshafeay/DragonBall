@@ -6,6 +6,7 @@ var loadCounter = 1 ;
 
 function loadGame() 
 {
+    document.getElementById("pause").setAttribute("disabled" , "disabled");
     gameArea.load();
     loadCounter=1
     loadInterval = setInterval(updateLoadText, 850);
@@ -14,6 +15,7 @@ function loadGame()
 
 function beginGame()
 {
+    document.getElementById("pause").removeAttribute("disabled");
     document.getElementById("loader").style.display = "none";
     clearInterval(loadInterval);
     gameArea.clear()
