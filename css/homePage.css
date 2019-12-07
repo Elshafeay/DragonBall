@@ -1,16 +1,35 @@
 #menu{
     margin: 200px;
+    margin-top: 17%;
 }
 body{
     background-image: url(../images/homePageBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #start,#help,#credits{
-    width: 200px;
+    width: 20%;
     margin: auto;
-    margin-left: 90%;
-    margin-top: 20px;
+    margin-left: 85%;
+    margin-top: 1%;
 }
 
 .btn{
     border-radius: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.631);
+}
+
+#level 
+{
+    color: white;
+    text-align: center;
+    margin:auto;
+    width: 300px;
+    margin-top: 200px;
+    display: none;
+}
+
+h3{
+    text-shadow: 1px 1px 2px black, 0 0 10px rgba(0, 0, 255, 0.5), 0 0 3px rgb(63, 63, 224, .5);
+    font-size: 35px;
 }
