@@ -1,0 +1,193 @@
+body
+{
+    background-image: url('../images/background24.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#player1Text
+{
+    width: 300px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: blue;
+    font-size: 40px;
+    font-family: 'Iceland', cursive;
+}
+
+#player2Text
+{
+    width: 300px;
+    height: 40px;
+    margin-left: 950px;
+    margin-top: -84px;
+    color: blue;
+    font-size: 40px;
+    font-family: 'Iceland', cursive;
+}
+
+#player1ImageDiv
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 500px;
+    margin-top: -100px;
+}
+
+#player1Image
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+    box-shadow: 0 0 4px 4px black;
+}
+
+#player1Image:hover
+{
+    box-shadow: 0 2px 8px white;
+    width: 130px;
+}
+
+#player2ImageDiv
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 700px;
+    margin-top: -120px;
+}
+
+#player2Image
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+    box-shadow: 0 0 4px 4px black;
+}
+
+#player2Image:hover
+{
+    box-shadow: 0 2px 8px white;
+    width: 130px;
+}
+
+#player1ShowDiv
+{
+    width: 250px;
+    height: 350px;
+    margin-left: 170px;
+    margin-top: 80px;
+}
+
+#player1Show
+{
+    width: 250px;
+    height: 350px;
+}
+
+#player2ShowDiv
+{
+    width: 250px;
+    height: 350px;
+    margin-left: 900px;
+    margin-top: -350px;
+}
+
+#player2Show
+{
+    width: 250px;
+    height: 350px;
+}
+
+#helpButton
+{
+    width: 90px;
+    height: 50px;
+    border-radius: 70px;
+    background-color: blue;
+}
+
+#helpLink
+{
+    color: limegreen;
+    font-size: 30px;
+    font-family: 'Iceland', cursive;
+    text-decoration: none;
+}
+
+#exitButton
+{
+    width: 90px;
+    height: 50px;
+    border-radius: 70px;
+    background-color: blue;
+}
+
+#exitLink
+{
+    color: red;
+    font-size: 30px;
+    font-family: 'Iceland', cursive;
+    text-decoration: none;
+}
+
+#nextButton
+{
+    width: 90px;
+    height: 50px;
+    border-radius: 70px;
+    background-color: blue;
+    display: none;
+}
+
+#nextLink
+{
+    color: white;
+    font-size: 30px;
+    font-family: 'Iceland', cursive;
+    text-decoration: none;
+}
+
+
+#helpButton:hover
+{
+    background-color: navy;
+    box-shadow: 0 2px 8px darkgray;
+    width: 95px;
+}
+
+#helpLink:hover
+{
+    font-size: 33px;
+}
+
+#exitButton:hover
+{
+    background-color: navy;
+    box-shadow: 0 2px 8px darkgray;
+    width: 95px;
+}
+#exitLink:hover
+{
+    font-size: 34px;
+}
+
+#nextButton:hover
+{
+    background-color: navy;
+    box-shadow: 0 2px 8px darkgray;
+    width: 95px;
+}
+#nextLink:hover
+{
+    font-size: 33px;
+}
+
+
+
+#buttonsDiv
+{
+    width: 315px;
+    margin-top: 80px;
+    margin-left: 520px;
+}
