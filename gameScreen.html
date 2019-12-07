@@ -4,6 +4,8 @@
     <head>
         <title>Dragon Ball</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
 
@@ -16,11 +18,23 @@
                 <p id="secondPlayerName" class="playerName"> Player 2</p>
                 <div id="LscoreBox" class="scoreLabel"><p id="Lscore">0</p></div>
                 <div id="RscoreBox" class="Rscore scoreLabel"><p id="Rscore">0</p></div>
+                <button id="pause"></button>
             </header>
+            
             <div id="loader">
             </div>
             <footer></footer>
+            <div class="popup" id="popup">
+                <div class="popuptext" id="myPopup">
+                    <h3>Menu</h3>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="resume">Resume</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="howToPlay">How To Play</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="mainMenu">Main Menu</button>
+                </div>
+            </div>
         </div>
+        
         <script src="js/loadingFunction.js"></script>
         <script src="js/components.js"> </script>
         <script src="js/gameScreen.js"></script>

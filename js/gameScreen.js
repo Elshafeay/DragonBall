@@ -35,6 +35,18 @@ function updateGameArea() {
     gameCharRight.update()
 }
 
+function pause()
+{
+    gameArea.stop();
+    document.getElementById("popup").style.display = "block";
+}
+
+function resume()
+{
+    document.getElementById("popup").style.display = "none";
+    startGame();
+}
+
 var container = document.getElementById("container")
 var Xincreament = 15
 var Yincreament = 10
@@ -66,4 +78,14 @@ document.addEventListener("keyup", (e) => {
     if (e.keyCode in map) {
         map[e.keyCode] = false;
     }
+});
+
+var pauseBtn = document.getElementById('pause');
+pauseBtn.addEventListener("click" , () => {
+    pause();
+});
+
+var resumeBtn = document.getElementById('resume');
+resumeBtn.addEventListener("click" , () => {
+    resume();
 });
