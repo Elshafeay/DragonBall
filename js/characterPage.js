@@ -97,6 +97,7 @@ var player1ShowDiv = document.getElementById('player1ShowDiv');
 var player2ShowDiv = document.getElementById('player2ShowDiv');
 var player1Show = document.getElementById('player1Show');
 var player2Show = document.getElementById('player2Show');
+var characterSound = document.getElementById("sound");
 
 
 //create img show for player one and set class and id
@@ -117,12 +118,14 @@ function afterChooseBluePlayer1()
         if(afterChooseYellowPlayer1Flag == 1 || afterChooseBluePlayer1Flag == 1)
         {
             createImgTagPlayer1.setAttribute('src', 'images/goku_blue_left.png');
+            characterSound.play();
         }
 
         else
         {
             createImgTagPlayer1.setAttribute('src', 'images/goku_blue_left1.png');
             player1ShowDiv.appendChild(createImgTagPlayer1);
+            characterSound.play();
             afterChooseBluePlayer1Flag = 1; 
         } 
     }  
@@ -135,11 +138,13 @@ function afterChooseYellowPlayer1()
         if(afterChooseBluePlayer1Flag == 1 || afterChooseYellowPlayer1Flag == 1)
         {
             createImgTagPlayer1.setAttribute('src', 'images/goku_yellow_left.png');
+            characterSound.play();
         }
         else
         {
             createImgTagPlayer1.setAttribute('src', 'images/goku_yellow_left.png');
             player1ShowDiv.appendChild(createImgTagPlayer1);
+            characterSound.play();
             afterChooseYellowPlayer1Flag = 1;
         }
     }
@@ -152,11 +157,13 @@ function afterChooseBluePlayer2()
         if(afterChooseYellowPlayer2Flag == 1 || afterChooseBluePlayer2Flag == 1)
         {
             createImgTagPlayer2.setAttribute('src', 'images/goku_blue_right.png');
+            characterSound.play();
         }
         else
         {
             createImgTagPlayer2.setAttribute('src', 'images/goku_blue_right.png');
             player2ShowDiv.appendChild(createImgTagPlayer2);
+            characterSound.play();
             afterChooseBluePlayer2Flag = 1;
         }
 
@@ -171,11 +178,13 @@ function afterChooseYellowPlayer2()
         if(afterChooseBluePlayer2Flag == 1 || afterChooseYellowPlayer2Flag == 1)
         {
             createImgTagPlayer2.setAttribute('src', 'images/goku_yellow_right.png');
+            characterSound.play();
         }
         else
         {
             createImgTagPlayer2.setAttribute('src', 'images/goku_yellow_right.png');
             player2ShowDiv.appendChild(createImgTagPlayer2);
+            characterSound.play();
             afterChooseYellowPlayer2Flag = 1;
         }
 
