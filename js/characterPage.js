@@ -121,7 +121,7 @@ function afterChooseBluePlayer1()
 
         else
         {
-            createImgTagPlayer1.setAttribute('src', 'images/goku_blue_left.png');
+            createImgTagPlayer1.setAttribute('src', 'images/goku_blue_left1.png');
             player1ShowDiv.appendChild(createImgTagPlayer1);
             afterChooseBluePlayer1Flag = 1; 
         } 
