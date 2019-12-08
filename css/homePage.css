@@ -33,3 +33,95 @@ h3{
     text-shadow: 1px 1px 2px black, 0 0 10px rgba(0, 0, 255, 0.5), 0 0 3px rgb(63, 63, 224, .5);
     font-size: 35px;
 }
+h4{
+    text-shadow: 1px 1px 2px black, 0 0 10px rgba(0, 0, 255, 0.5), 0 0 3px rgb(63, 63, 224, .5);
+    color:white;
+}
+
+.playersHelp{
+    margin: 0;
+    width: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.R{
+    float: right;
+    margin-right: 155px;
+}
+.L{
+    float: left;
+    margin-left: 230px;
+}
+
+.card{
+    margin: auto;
+    margin-top: 100px;
+    width:700px;
+    height: 500px;
+    background-color:#007bff !important;
+    border-radius: 20px !important;
+}
+#helpBack{
+    width: 90px;
+    border-radius: 100px;
+    margin: 0px;
+    margin-top: 240px;
+    box-shadow: 1px 2px 5px #0955a7b4;
+    margin-left: -500px;
+}
+u{
+    font-weight: bold;
+    font-size: x-large;
+    text-underline-position: below;
+}
+#helpKeys{
+    width: 300px;
+    margin-left: 200px;
+}
+
+#helpPage{
+    display: none;
+}
+.scoreLimit{
+    display: none;
+    margin:auto;
+    margin-left: 600px;
+    margin-top: 200px;
+    width:250px;
+}
+
+#scoreInput{
+    margin:5px;
+    display: block !important;
+    width: 300px;
+}
+#scoreSubmit{
+    margin-left: 260px;
+    width: 80px;
+    margin-top:50px;
+}
+#scoreText{
+    margin-left: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#scoreBack{
+    margin-top:-65px;
+    margin-left: -30px;
+    width: 80px;
+}
+
+.error-message{
+    color:rgb(238, 255, 0);
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -110px;
+    margin-left: 10px;
+    width:300px;
+}
+
+#characterSelection{
+    display: none;
+}

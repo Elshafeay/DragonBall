@@ -7,16 +7,20 @@
     <title>Dragon Ball</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/characterPage.css">
 </head>
 <body>
     <audio autoplay loop>
         <source src="audio/intro.ogg" type="audio/ogg">
     </audio>
+    <audio id="sound">   
+            <source src="audio/characterSound2.mp3" />
+    </audio>
     <div class='menu' id='menu'>
         <button type="button" class="btn btn-primary btn-lg btn-block" id="start" onclick='levelDisplay();'>Start Game!</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="help" onclick="location.href = 'howToPlay.html';">How to Play?</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="help" onclick='helpDisplay();'>How to Play?</button>
         <button type="button" class="btn btn-primary btn-lg btn-block" id="credits" onclick="location.href = 'credits.html';">Credits</button>
     </div>
     <div class='level' id='level'>
@@ -24,7 +28,54 @@
         <button type="button" class="btn btn-primary btn-lg btn-block" id="easy">Easy</button>
         <button type="button" class="btn btn-primary btn-lg btn-block" id="medium">Medium</button>
         <button type="button" class="btn btn-primary btn-lg btn-block" id="hard">Hard</button>
+        <button class="btn btn-primary" id="helpBack" onclick='menuDisplay();'>Back</button>
+    </div>
+    <div id="helpPage" class="card card-body text-white">
+        <u>How to Play!</u>
+        <br>
+        <br>
+        <h4>Try to hit the ball and don't let it pass you.</h4>
+        <p class="L playersHelp">Player 1</p>
+        <p class="R playersHelp">Player 2</p>
+        <img id="helpKeys" src="images/keys.gif">
+        <button class="btn btn-primary" id="helpBack" onclick='menuDisplay();'>Back</button>
+    </div>
+    <div id="scoreLimit" class="scoreLimit">
+        <form action="" class="scoreForm">
+            <h4 id="scoreText">Enter your score limit:</h4>
+            <input id="scoreInput" type="text" name="scorelimit" value="" placeholder="Maximum score limit is 20...">
+            <button id="scoreSubmit" type ="submit" class="btn btn-primary">Next</button>
+        </form>
+        <button class="btn btn-primary" id="scoreBack" onclick='levelDisplay();'>Back</button>
+        <p class="error-message"></p>
+    </div>
+    <div id="characterSelection">
+        <h2 class="player1Text" id="player1Text">
+            <!--Written by javascript function createPlayer1Text & printPlayer1Text-->
+        </h2>
+        <div class="player1ImageDiv" id="player1ImageDiv">
+            <img src="images/goku9 (1).png" class="player1Image" id="player1Image">
+        </div>
+
+        <div class="player2ImageDiv" id="player2ImageDiv">
+            <img src="images/goku8 (2).png" class="player2Image" id="player2Image">
+        </div>
+
+        <h2 class="player2Text" id="player2Text">
+        </h2>
+
+        <div class="player1ShowDiv" id="player1ShowDiv">
+        </div>
+
+        <div class="player2ShowDiv" id="player2ShowDiv">
+        </div>
+
+        <div class="buttonsDiv" id="buttonsDiv">
+            <button class="helpButton helpLink" id="charBack">Back</button>
+            <button class="nextButton nextLink" id="nextButton">NEXT</button>
+        </div>
     </div>
     <script src="js/preGame.js"></script>
+    <script src="js/characterPage.js"></script>
 </body>
 </html>

@@ -1,26 +1,20 @@
-body
-{
-    background-image: url('../images/charactersBackground.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #player1Text
 {
     width: 300px;
     height: 40px;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 50px;
     color: blue;
     font-size: 40px;
     font-family: 'Iceland', cursive;
+    font-weight: bold;
 }
 
 #player2Text
 {
     width: 300px;
     height: 40px;
-    margin-left: 950px;
+    margin-left: 1100px;
     margin-top: -84px;
     color: blue;
     font-size: 40px;
@@ -31,8 +25,8 @@ body
 {
     width: 120px;
     height: 120px;
-    margin-left: 500px;
-    margin-top: -100px;
+    margin-left: 600px;
+    margin-top: -80px;
 }
 
 #player1Image
@@ -53,7 +47,7 @@ body
 {
     width: 120px;
     height: 120px;
-    margin-left: 700px;
+    margin-left: 800px;
     margin-top: -120px;
 }
 
@@ -75,7 +69,7 @@ body
 {
     width: 250px;
     height: 350px;
-    margin-left: 170px;
+    margin-left: 220px;
     margin-top: 80px;
 }
 
@@ -89,7 +83,7 @@ body
 {
     width: 250px;
     height: 350px;
-    margin-left: 900px;
+    margin-left: 1100px;
     margin-top: -350px;
 }
 
@@ -99,48 +93,37 @@ body
     height: 350px;
 }
 
-#helpButton
+.helpButton
 {
     width: 90px;
     height: 50px;
+    border: 0px;
     border-radius: 70px;
     background-color: blue;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.631);
 }
 
-#helpLink
+.helpLink
 {
-    color: limegreen;
+    color: white;
     font-size: 30px;
     font-family: 'Iceland', cursive;
     text-decoration: none;
 }
 
-#exitButton
+.nextButton
 {
     width: 90px;
     height: 50px;
-    border-radius: 70px;
-    background-color: blue;
-}
-
-#exitLink
-{
-    color: red;
-    font-size: 30px;
-    font-family: 'Iceland', cursive;
-    text-decoration: none;
-}
-
-#nextButton
-{
-    width: 90px;
-    height: 50px;
+    border: 0px;
     border-radius: 70px;
     background-color: blue;
     display: none;
+    margin-left: 80px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.631);
 }
 
-#nextLink
+.nextLink
 {
     color: white;
     font-size: 30px;
@@ -149,45 +132,32 @@ body
 }
 
 
-#helpButton:hover
+.helpButton:hover
 {
     background-color: navy;
     box-shadow: 0 2px 8px darkgray;
     width: 95px;
 }
 
-#helpLink:hover
+.helpLink:hover
 {
     font-size: 33px;
 }
 
-#exitButton:hover
+.nextButton:hover
 {
     background-color: navy;
     box-shadow: 0 2px 8px darkgray;
     width: 95px;
 }
-#exitLink:hover
-{
-    font-size: 34px;
-}
-
-#nextButton:hover
-{
-    background-color: navy;
-    box-shadow: 0 2px 8px darkgray;
-    width: 95px;
-}
-#nextLink:hover
+.nextLink:hover
 {
     font-size: 33px;
 }
-
-
 
 #buttonsDiv
 {
     width: 315px;
     margin-top: 80px;
-    margin-left: 520px;
+    margin-left: 650px;
 }
