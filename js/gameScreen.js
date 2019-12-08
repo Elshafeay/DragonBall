@@ -1,3 +1,8 @@
+rPlayerCharColor=localStorage.getItem("rPlayerChar");
+lPlayerCharColor=localStorage.getItem("lPlayerChar");
+scoreLimit=localStorage.getItem("scoreLimit");
+level=localStorage.getItem("level");
+
 var gameArea = {
     canvas : document.createElement("canvas"),
     load : function() {

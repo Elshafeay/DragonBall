@@ -102,6 +102,9 @@ document.querySelector("#charBack").addEventListener('click', function(e){
 })
 document.querySelector("#nextButton").addEventListener('click', function(e){
     e.preventDefault()
-    console.log(lPlayerChar);
-    console.log(rPlayerChar);
+    localStorage.setItem("rPlayerChar", rPlayerChar);
+    localStorage.setItem("lPlayerChar", lPlayerChar);
+    localStorage.setItem("scoreLimit", scoreLimit);
+    localStorage.setItem("level", level);
+    location.href="gameScreen.html";
 })
