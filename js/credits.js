@@ -19,21 +19,30 @@ function component() {
 
 		var ctx=canvas.getContext("2d");
 
-		ctx.font = "50px Times New Roman";
 		ctx.textAlign = "center";
-		ctx.fillStyle = "white";
 		ctx.shadowOffsetX = 5;
 		ctx.shadowOffsetY = 3;
 		ctx.shadowBlur = 2;
-		ctx.shadowColor = "rgba(0,0,0,0.5)";
-
+		
+		
+		ctx.font = "70px Times New Roman";
+		ctx.strokeStyle="yellow"
+		ctx.fillStyle = "black";
+		ctx.shadowColor = "rgb(107, 107, 245)";
 		
 		ctx.fillText("<Super Saiyans/>",canvas.width/2,team--);
-		ctx.fillText("Mohamed elshafeay",canvas.width/2,name1--);
-		ctx.fillText("Kareem saied",canvas.width/2,name2--);
+
+
+		ctx.shadowColor = "rgba(0,0,0,0.5)";
+		ctx.font = "50px Times New Roman";
+		ctx.fillStyle = "white";
+
+		ctx.fillText("Mohamed Elshafeay",canvas.width/2,name1--);
+		ctx.fillText("Kareem Saied",canvas.width/2,name2--);
 		ctx.fillText("Ebtsam Ali",canvas.width/2,name3--);
 		ctx.fillText("Eman Magdy",canvas.width/2,name4--);
 		ctx.fillText("Omar Abdo",canvas.width/2,name5--);
+
 		container.replaceChild(canvas , oldCanvas);
 	}
 }
