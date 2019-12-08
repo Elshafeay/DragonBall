@@ -26,7 +26,6 @@ function component() {
 		
 		
 		ctx.font = "70px Times New Roman";
-		ctx.strokeStyle="yellow"
 		ctx.fillStyle = "black";
 		ctx.shadowColor = "rgb(107, 107, 245)";
 		
