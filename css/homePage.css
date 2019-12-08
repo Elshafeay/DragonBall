@@ -95,6 +95,8 @@ u{
     margin:5px;
     display: block !important;
     width: 300px;
+    border: 1px solid #0080ff;
+    border-radius:15px
 }
 #scoreSubmit{
     margin-left: 260px;
