@@ -1,7 +1,19 @@
-#canvas-container{
-    margin: 200px;
-    margin-right: 200px;
-}
 body{
-    background-image: url(images/background.jpg);
+    background-image: url(../images/homePageBackground_blured.jpg);
+    margin: 0;
+    overflow: hidden;
+}
+#container{
+    position: relative;
+    z-index: 2;
+}
+#canvas-container{
+    position: fixed;
+}
+#creditsBack{
+    width: 90px;
+    border-radius: 100px;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 2%;
 }

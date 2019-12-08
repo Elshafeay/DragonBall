@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/credits.css">
 </head>
+
 <body>
-        <audio autoplay loop>
-                <source src="audio/intro.ogg" type="audio/ogg">
-        </audio>
-          
-    <div id="canvas-container">
-        <canvas></canvas>
-    </div>
+    <audio autoplay loop>
+        <source src="audio/intro.ogg" type="audio/ogg">
+        <source src="audio/characterSound2.mp3" type="audio/ogg">
+    </audio>
+    <div id="container">
+        <div id="canvas-container">
+            <canvas></canvas>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="creditsBack">Back</button>
         <script src="js/credits.js"></script>
+    </div>
 </body>
+
 </html>
