@@ -20,7 +20,7 @@ function levelDisplay(){
     helpBack.style.marginTop="100px"
     characterSelection.style.display="none"
     score.style.display="none"
-    document.body.style.backgroundImage= "url('../images/homePageBackground_blured.jpg')"
+    document.body.style.backgroundImage= "url('images/homePageBackground_blured.jpg')"
 }
 
 function helpDisplay(){
@@ -29,7 +29,7 @@ function helpDisplay(){
     help.style.display="block"
     characterSelection.style.display="none"
     score.style.display="none"
-    document.body.style.backgroundImage= "url('../images/homePageBackground_blured.jpg')"
+    document.body.style.backgroundImage= "url('images/homePageBackground_blured.jpg')"
 }
 
 function menuDisplay(){
@@ -38,7 +38,7 @@ function menuDisplay(){
     help.style.display="none"
     characterSelection.style.display="none"
     score.style.display="none"
-    document.body.style.backgroundImage= "url('../images/homePageBackground.jpg')"
+    document.body.style.backgroundImage= "url('images/homePageBackground.jpg')"
 }
 
 function scoreLimitDisplay(){
@@ -47,7 +47,7 @@ function scoreLimitDisplay(){
     help.style.display="none"
     score.style.display="block"
     characterSelection.style.display="none"
-    document.body.style.backgroundImage= "url('../images/homePageBackground_blured.jpg')"
+    document.body.style.backgroundImage= "url('images/homePageBackground_blured.jpg')"
 }
 
 function characterSelectionDisplay(){
@@ -56,7 +56,7 @@ function characterSelectionDisplay(){
     help.style.display="none"
     score.style.display="none"
     characterSelection.style.display="block"
-    document.body.style.backgroundImage= "url('../images/characterSelectBackground.jpg')"
+    document.body.style.backgroundImage= "url('images/characterSelectBackground.jpg')"
 }
 easy.addEventListener('click', function(e){
     e.preventDefault()
