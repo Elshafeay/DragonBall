@@ -101,10 +101,10 @@ p{
 
 #loader {
     position: absolute;
-    left: 40%;
+    left: 30%;
     top: 35%;
     z-index: 1;
-    width: 300px;
+    width: 500px;
     height: 300px;
     margin: auto;
     font-style: oblique;

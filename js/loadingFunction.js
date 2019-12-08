@@ -3,6 +3,7 @@
 var beginTimeOut;
 var loadInterval;
 var loadCounter = 1 ;
+var loader =   document.getElementById("loader");
 
 function loadGame() 
 {
@@ -18,14 +19,12 @@ function beginGame()
     document.getElementById("pause").removeAttribute("disabled");
     document.getElementById("loader").style.display = "none";
     clearInterval(loadInterval);
-    gameArea.clear()
     startGame();
 }
 
 function updateLoadText()
 {
     document.getElementById("loader").style.display = "block";
-    var loader =   document.getElementById("loader");
     switch(loadCounter)
     {
             case 1 : loader.textContent= "3";
