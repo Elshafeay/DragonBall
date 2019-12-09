@@ -1,6 +1,5 @@
 var rPlayerScore = 0
 var lPlayerScore = 0
-var scoreLimit = 3
 var Rscore = document.querySelector("#Rscore")
 var Lscore = document.querySelector("#Lscore")
 Lscore.textContent=lPlayerScore

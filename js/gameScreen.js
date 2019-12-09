@@ -44,6 +44,9 @@ function pause()
 {
     gameArea.stop();
     document.getElementById("popup").style.display = "block";
+    document.getElementById("resume").innerHTML = "Resume";
+    document.getElementById("howToPlay").innerHTML = "How to play";
+    document.getElementById("howToPlay").style.display = "block";
 }
 
 function resume()
@@ -52,15 +55,50 @@ function resume()
     startGame();
 }
 
+var winningPopupFlag = 1;
+var playAgain = document.getElementById('resume');
+
+function winningPopup()
+{
+
+    document.getElementById("howToPlay").style.display = "none";
+
+
+    playAgain.innerHTML = "PLAY AGAIN";
+    gameArea.stop();
+    gameArea.clear();
+    gameArea.load();
+    document.getElementById("popup").style.display = "block";
+}
+
 var container = document.getElementById("container")
-var Xincreament = 15
-var Yincreament = 10
+var Xincreament
+var Yincreament
 var Rgoal=0
 var Lgoal=0
 
 var canvas = document.getElementsByTagName('canvas')[0];
 loadGame();
+levelsSpecifier();
 
+function levelsSpecifier()
+{
+    switch(level)
+    {
+            case 'easy' : 
+                Xincreament = 10
+                Yincreament = 5
+                break ;
+            case 'medium' : 
+                Xincreament = 15 ;
+                Yincreament = 10 ;
+                break ;
+            case 'hard' : 
+                Xincreament = 20 ; 
+                Yincreament = 15 ;
+                break ;
+    }
+}
 var map = {38: false, 40: false, 119: false, 115: false, 87: false, 83: false};
 document.addEventListener( 'keydown' , (e) => {
     if (e.keyCode in map) {
