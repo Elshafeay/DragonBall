@@ -21,7 +21,7 @@
     <div class='menu' id='menu'>
         <button type="button" class="btn btn-primary btn-lg btn-block" id="start" onclick='levelDisplay();'>Start Game!</button>
         <button type="button" class="btn btn-primary btn-lg btn-block" id="help" onclick='helpDisplay();'>How to Play?</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block" id="credits" onclick="location.href = 'credits.html';">Credits</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="credits" onclick='creditsDisplay();'>Credits</button>
     </div>
     <div class='level' id='level'>
         <h3>Select Level</h3>
@@ -74,6 +74,12 @@
             <button class="helpButton helpLink" id="charBack">Back</button>
             <button class="nextButton nextLink" id="nextButton">NEXT</button>
         </div>
+    </div>
+    <div id="creditsPage">
+        <div id="canvas-container">
+            <canvas></canvas>
+        </div>
+        <button id="creditsBack" class="btn btn-primary">Back</button>
     </div>
     <script src="js/preGame.js"></script>
     <script src="js/characterPage.js"></script>

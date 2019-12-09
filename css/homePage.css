@@ -127,3 +127,16 @@ u{
 #characterSelection{
     display: none;
 }
+#creditsPage{
+    display: none;
+}
+#canvas-container{
+    position: fixed;
+}
+#creditsBack{
+    width: 90px;
+    border-radius: 100px;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 2%;
+}
