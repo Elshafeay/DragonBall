@@ -1,6 +1,20 @@
 function fireBallHandling(){
-    if(fireBall.crashWith(gameCharLeft)||fireBall.crashWith(gameCharRight)){
-        Xincreament *= -1
+    if(crashFlag==1){
+        if(400 < fireBall.x < 600){
+            crashFlag=0
+        }
+    }
+    else if(crashFlag==0){
+        if(fireBall.crashWith(gameCharRight) && (fireBall.x < gameCharRight.x+15)){
+            crashFlag=1
+            Xincreament *= -1
+            fireBall.x=gameCharRight.x-85
+        }
+        else if(fireBall.crashWith(gameCharLeft) && fireBall.x > gameCharLeft.x-15){
+            crashFlag=1
+            Xincreament *= -1
+            fireBall.x=gameCharLeft.x + 115
+        }
     }
     if(fireBall.y <= 0){
         Yincreament *= -1

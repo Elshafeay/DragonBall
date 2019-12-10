@@ -76,7 +76,7 @@ var Xincreament
 var Yincreament
 var Rgoal=0
 var Lgoal=0
-
+var crashFlag=1
 var canvas = document.getElementsByTagName('canvas')[0];
 loadGame();
 levelsSpecifier();
