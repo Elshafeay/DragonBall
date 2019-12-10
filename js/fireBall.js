@@ -8,12 +8,12 @@ function fireBallHandling(){
         if(fireBall.crashWith(gameCharRight) && (fireBall.x < gameCharRight.x+15)){
             crashFlag=1
             Xincreament *= -1
-            fireBall.x=gameCharRight.x-85
+            fireBall.x=gameCharRight.x-levelD
         }
         else if(fireBall.crashWith(gameCharLeft) && fireBall.x > gameCharLeft.x-15){
             crashFlag=1
             Xincreament *= -1
-            fireBall.x=gameCharLeft.x + 115
+            fireBall.x=gameCharLeft.x + levelD + 30
         }
     }
     if(fireBall.y <= 0){

@@ -77,6 +77,7 @@ var Yincreament
 var Rgoal=0
 var Lgoal=0
 var crashFlag=1
+var levelD
 var canvas = document.getElementsByTagName('canvas')[0];
 loadGame();
 levelsSpecifier();
@@ -88,14 +89,17 @@ function levelsSpecifier()
             case 'easy' : 
                 Xincreament = 10
                 Yincreament = 5
+                levelD=105;
                 break ;
             case 'medium' : 
                 Xincreament = 15 ;
                 Yincreament = 10 ;
+                levelD=95;
                 break ;
             case 'hard' : 
                 Xincreament = 20 ; 
                 Yincreament = 15 ;
+                levelD=85;
                 break ;
     }
 }
